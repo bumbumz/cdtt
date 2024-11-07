@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Londrina+Shadow&display=swap');
+
+/* Hiệu ứng trượt */
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.slide-animation {
+    display: inline-block;
+
+
+    animation: slide 20s;
+    width: 800px;
+    /* Đảm bảo chiều rộng không bị cắt */
+    /* Nếu cần, có thể điều chỉnh left để bắt đầu từ ngoài màn hình bên trái */
+    left: 100%;
+
+}
+
+.relative {
+
+
+    /* Đảm bảo phần tử không bị cắt */
+}
+
+/* Nếu muốn thêm khoảng cách giữa các phần tử */
+.spacing {
+    margin-right: 8rem;
+}
+
+.new-arrivals {
+    font-family: "Londrina Shadow", sans-serif;
+}
